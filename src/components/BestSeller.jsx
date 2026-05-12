@@ -47,18 +47,18 @@ export default function BestSeller() {
   ];
 
   return (
-    <section className="py-14 bg-gray-100 px-6 max-w-8xl mx-auto" id="shop">
+    <section className="py-10 bg-gray-100 px-6 max-w-8xl mx-auto" id="shop">
       {/* Content */}
-      <div className="py-12 max-w-7xl mx-auto">
+      <div className="py-8 max-w-7xl mx-auto">
         {/* Text */}
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-4xl md:text-6xl font-bold text-center mb-4">
+          <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">
             Best Seller
           </h1>
         </div>
 
         {/* Bottom Line */}
-        <div className="flex justify-center mb-12">
+        <div className="flex justify-center mb-8">
           <ButtomLine />
         </div>
 

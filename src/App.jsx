@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import BestSeller from "./components/BestSeller";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
+import WhyChooseUs from "./components/WhyChooseUs";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <BestSeller />
       <FloatingWhatsApp />
+      <WhyChooseUs />
     </>
   );
 }
