@@ -21,14 +21,14 @@ export default function Header() {
           </span>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-tight text-gray-800">
-            Bunga <span className="text-[#f28c56]">Cantik</span>
+            Save your <span className="text-[#f28c56]">Beautiful</span>
             <br />
-            untuk Momen <span className="text-[#f28c56]">Cantik</span>
+            Memories with <span className="text-[#f28c56]">Us</span> 💐
           </h1>
 
           <p className="mt-6 text-gray-600 text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
-            Dinraee Florist menghadirkan bunga segar dan rangkaian indah untuk
-            setiap momen cantikmu.
+            Dinraee florist menyediakan rangkaian bunga yang indah untuk setiap
+            momen berhargamu.
           </p>
 
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
@@ -40,7 +40,7 @@ export default function Header() {
             </a>
 
             <a
-              href="https://wa.me/6285719944792?text=Halo%2C+saya+ingin+memesan+bunga"
+              href="https://wa.me/6283865274772?text=Halo%2C+saya+ingin+memesan+bunga"
               className="px-8 py-4 bg-white border border-gray-200 rounded-full font-semibold hover:bg-gray-300 transition duration-300 text-gray-700 text-center"
             >
               Order Sekarang
@@ -56,7 +56,7 @@ export default function Header() {
           <div className="absolute -bottom-8 -left-8 w-32 h-32 bg-orange-200 rounded-full blur-3xl opacity-60"></div>
 
           {/* Main Image */}
-          <div className="relative overflow-hidden rounded-[2rem] shadow-2xl md:rotate-2 hover:rotate-0 transition duration-500">
+          <div className="relative overflow-hidden max-h-[850px] rounded-[2rem] shadow-2xl md:rotate-2 hover:rotate-0 transition duration-500">
             <img
               src="SunnyPink.jpeg"
               alt="Bouquet"

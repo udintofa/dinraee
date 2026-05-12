@@ -5,23 +5,23 @@ export default function WhyChooseUs() {
   const features = [
     {
       icon: <FaSeedling />,
-      title: "Fresh Flowers",
-      desc: "Bunga segar pilihan yang dirangkai setiap hari.",
+      title: "Fresh, Artificial, or custom bouquet",
+      desc: "Menerima setiap pilihan bunga yang jadi pilihanmu",
     },
     {
       icon: <FaHeart />,
       title: "Made With Love",
-      desc: "Setiap bouquet dibuat dengan penuh perhatian.",
+      desc: "Setiap bouquet dibuat dengan penuh cinta",
     },
     {
       icon: <FaTruck />,
-      title: "Fast Delivery",
-      desc: "Pengiriman cepat dan aman sampai tujuan.",
+      title: "Easy to Order or Delivery",
+      desc: "Penerimaan pesanan yang mudah dan pengiriman yang aman sampai tujuan.",
     },
     {
       icon: <FaGift />,
       title: "Perfect Gift",
-      desc: "Cocok untuk ulang tahun, wisuda, dan momen spesial.",
+      desc: "Cocok untuk ulang tahun, wisuda, dan momen spesial lainnya",
     },
   ];
 
