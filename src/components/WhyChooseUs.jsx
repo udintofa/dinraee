@@ -26,9 +26,9 @@ export default function WhyChooseUs() {
   ];
 
   return (
-    <section className="py-20 overflow-hidden bg-white">
+    <section className="max-w-7xl mx-auto py-20 overflow-hidden bg-white">
       {/* Heading */}
-      <div className="max-w-7xl mx-auto px-6 text-center mb-12">
+      <div className="px-6 text-center mb-12">
         <h1 className="text-4xl md:text-5xl font-bold text-gray-800">
           Why Choose Us
         </h1>

@@ -5,7 +5,7 @@ export default function OurFlowerGallery() {
     {
       id: 1,
       image: "Blueshy.jpeg",
-      height: "h-72",
+      height: "h-74",
     },
     {
       id: 2,
@@ -20,7 +20,7 @@ export default function OurFlowerGallery() {
     {
       id: 4,
       image: "Gerbi.jpeg",
-      height: "h-64",
+      height: "h-74",
     },
     {
       id: 5,
@@ -40,7 +40,7 @@ export default function OurFlowerGallery() {
     {
       id: 8,
       image: "Rosey.jpeg",
-      height: "h-72",
+      height: "h-80",
     },
   ];
 

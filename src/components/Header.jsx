@@ -58,7 +58,7 @@ export default function Header() {
           {/* Main Image */}
           <div className="relative overflow-hidden rounded-[2rem] shadow-2xl md:rotate-2 hover:rotate-0 transition duration-500">
             <img
-              src="CherryBlush.jpeg"
+              src="SunnyPink.jpeg"
               alt="Bouquet"
               className="w-full object-cover"
             />
