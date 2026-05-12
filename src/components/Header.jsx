@@ -58,24 +58,24 @@ export default function Header() {
           {/* Main Image */}
           <div className="relative overflow-hidden rounded-[2rem] shadow-2xl md:rotate-2 hover:rotate-0 transition duration-500">
             <img
-              src="https://nasyaflorist.com/storage/sliders/01KEBQ91PA9F03KVKK6TF2WTQ1.jpg"
+              src="CherryBlush.jpeg"
               alt="Bouquet"
               className="w-full object-cover"
             />
 
             {/* Floating Card */}
             <div className="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-[#ffe3e6] flex items-center justify-center font-bold text-[#f28c56]">
+              {/* <div className="w-12 h-12 rounded-full bg-[#ffe3e6] flex items-center justify-center font-bold text-[#f28c56]">
                 50%
-              </div>
+              </div> */}
 
               <div>
                 <p className="text-xs uppercase tracking-widest text-gray-500">
-                  Special Offer
+                  Tawaran Spesial
                 </p>
 
                 <p className="font-semibold text-gray-800">
-                  Summer Bouquet Collection
+                  Buket Wisuda untuk Momen Spesial
                 </p>
               </div>
             </div>

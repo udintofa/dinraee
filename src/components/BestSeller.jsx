@@ -19,40 +19,35 @@ const cardVariants = {
 export default function BestSeller() {
   const [filter, setFilter] = useState("all");
 
-  const categories = ["all", "Literasi", "Matematika", "Strategi"];
-
   const courses = [
     {
       id: 1,
-      title: "Penalaran Umum TPS",
-      author: "Mentor GradienNol",
-      category: "TPS",
-      price: 0,
-      image:
-        "https://nasyaflorist.com/storage/sliders/01KEBQ91PA9F03KVKK6TF2WTQ1.jpg", // diskusi belajar
+      title: "Sunny Pink",
+      author: "Zahra Florist",
+      category: "Fresh Flower",
+      price: 55,
+      image: "SunnyPink.jpeg",
     },
     {
       id: 2,
-      title: "Literasi Bahasa Indonesia UTBK",
-      author: "Mentor GradienNol",
-      category: "Literasi",
-      price: 0,
-      image:
-        "https://nasyaflorist.com/storage/sliders/01KEBQ91PA9F03KVKK6TF2WTQ1.jpg", // membaca buku
+      title: "Rosey",
+      author: "Zahra Florist",
+      category: "Fresh Flower",
+      price: 15,
+      image: "Rosey.jpeg",
     },
     {
       id: 3,
-      title: "Penalaran Matematika UTBK",
-      author: "Mentor GradienNol",
-      category: "Matematika",
-      price: 0,
-      image:
-        "https://nasyaflorist.com/storage/sliders/01KEBQ91PA9F03KVKK6TF2WTQ1.jpg", // matematika papan tulis
+      title: "Cherry Blush",
+      author: "Zahra Florist",
+      category: "Fresh Flower",
+      price: 55,
+      image: "CherryBlush.jpeg",
     },
   ];
 
   return (
-    <section className="py-16 bg-gray-100 px-6 max-w-8xl mx-auto" id="shop">
+    <section className="py-14 bg-gray-100 px-6 max-w-8xl mx-auto" id="shop">
       {/* Content */}
       <div className="py-12 max-w-7xl mx-auto">
         {/* Text */}
