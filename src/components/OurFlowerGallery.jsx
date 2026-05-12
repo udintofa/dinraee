@@ -9,7 +9,7 @@ export default function OurFlowerGallery() {
     },
     {
       id: 2,
-      image: "CherryBlush.jpeg",
+      image: "Squeezy.jpeg",
       height: "h-96",
     },
     {
@@ -39,7 +39,7 @@ export default function OurFlowerGallery() {
     },
     {
       id: 8,
-      image: "Rosey.jpeg",
+      image: "SunnyWhite.jpeg",
       height: "h-80",
     },
   ];

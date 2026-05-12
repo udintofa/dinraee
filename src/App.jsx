@@ -5,6 +5,9 @@ import BestSeller from "./components/BestSeller";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import WhyChooseUs from "./components/WhyChooseUs";
 import OurFlowerGallery from "./components/OurFlowerGallery";
+import OccasionCategories from "./components/OccasionCategories";
+import ProcessSection from "./components/ProcessSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -15,6 +18,9 @@ function App() {
       <FloatingWhatsApp />
       <WhyChooseUs />
       <OurFlowerGallery />
+      <OccasionCategories />
+      <ProcessSection />
+      <Footer />
     </>
   );
 }

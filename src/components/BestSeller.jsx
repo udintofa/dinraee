@@ -23,7 +23,7 @@ export default function BestSeller() {
     {
       id: 1,
       title: "Sunny Pink",
-      author: "Zahra Florist",
+      author: "Dinraee Florist",
       category: "Fresh Flower",
       price: 55,
       image: "SunnyPink.jpeg",
@@ -31,7 +31,7 @@ export default function BestSeller() {
     {
       id: 2,
       title: "Rosey",
-      author: "Zahra Florist",
+      author: "Dinraee Florist",
       category: "Fresh Flower",
       price: 15,
       image: "Rosey.jpeg",
@@ -39,7 +39,7 @@ export default function BestSeller() {
     {
       id: 3,
       title: "Cherry Blush",
-      author: "Zahra Florist",
+      author: "Dinraee Florist",
       category: "Fresh Flower",
       price: 55,
       image: "CherryBlush.jpeg",
