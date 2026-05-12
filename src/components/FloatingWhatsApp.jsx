@@ -19,7 +19,7 @@ export default function FloatingWhatsApp() {
       {/* WhatsApp Link */}
       {open && (
         <a
-          href="https://wa.me/6285719944792?text=Halo+Admin%2C+saya+ingin+bertanya."
+          href="https://wa.me/6283865274772?text=Halo+Admin%2C+saya+ingin+bertanya."
           target="_blank"
           rel="noopener noreferrer"
           className="bg-green-500 hover:bg-green-600 text-white shadow-xl px-5 py-3 rounded-full text-sm font-semibold flex items-center gap-2 transition duration-300"

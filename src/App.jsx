@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import BestSeller from "./components/BestSeller";
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import WhyChooseUs from "./components/WhyChooseUs";
+import OurFlowerGallery from "./components/OurFlowerGallery";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <BestSeller />
       <FloatingWhatsApp />
       <WhyChooseUs />
+      <OurFlowerGallery />
     </>
   );
 }
