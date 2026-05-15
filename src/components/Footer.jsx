@@ -1,4 +1,5 @@
 import { FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -8,7 +9,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Brand */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-800">Nasya Florist</h2>
+            <h2 className="text-3xl font-bold text-gray-800">
+              Dinraee Florist
+            </h2>
 
             <p className="mt-5 text-gray-600 leading-relaxed">
               Menghadirkan rangkaian bunga indah untuk setiap momen spesialmu
@@ -21,21 +24,21 @@ export default function Footer() {
             <h3 className="text-xl font-semibold text-gray-800">Navigation</h3>
 
             <div className="mt-5 flex flex-col gap-3 text-gray-600">
-              <a href="#home" className="hover:text-[#f28c56] transition">
+              <Link to="#" className="hover:text-[#f28c56] transition">
                 Home
-              </a>
+              </Link>
 
-              <a href="#catalog" className="hover:text-[#f28c56] transition">
+              <Link to="#catalog" className="hover:text-[#f28c56] transition">
                 Catalog
-              </a>
+              </Link>
 
-              <a href="#gallery" className="hover:text-[#f28c56] transition">
+              <Link to="#gallery" className="hover:text-[#f28c56] transition">
                 Gallery
-              </a>
+              </Link>
 
-              <a href="#contact" className="hover:text-[#f28c56] transition">
+              <Link to="#contact" className="hover:text-[#f28c56] transition">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -46,7 +49,7 @@ export default function Footer() {
             <div className="mt-5 flex items-center gap-4">
               {/* Instagram */}
               <a
-                href="https://instagram.com/"
+                href="https://www.instagram.com/dinraeeflo_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-14 h-14 rounded-full bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex items-center justify-center text-2xl text-[#f28c56]"
@@ -56,7 +59,7 @@ export default function Footer() {
 
               {/* TikTok */}
               <a
-                href="https://tiktok.com/"
+                href="https://www.tiktok.com/@dinraeeflo_"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-14 h-14 rounded-full bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex items-center justify-center text-2xl text-[#f28c56]"
@@ -66,7 +69,7 @@ export default function Footer() {
 
               {/* WhatsApp Channel */}
               <a
-                href="https://whatsapp.com/channel/"
+                href="https://whatsapp.com/channel/0029VbCuAAwFSAt6dCtOsp1K"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-14 h-14 rounded-full bg-white shadow-md hover:shadow-xl hover:-translate-y-1 transition duration-300 flex items-center justify-center text-2xl text-[#f28c56]"
@@ -83,7 +86,7 @@ export default function Footer() {
 
         {/* Bottom */}
         <div className="border-t border-pink-100 mt-14 pt-6 text-center text-gray-500 text-sm">
-          © 2026 Nasya Florist. All rights reserved.
+          © 2026 Dinraee Florist. All rights reserved.
         </div>
       </div>
     </footer>

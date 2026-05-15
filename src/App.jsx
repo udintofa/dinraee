@@ -9,20 +9,9 @@ import OccasionCategories from "./components/OccasionCategories";
 import ProcessSection from "./components/ProcessSection";
 import Footer from "./components/Footer";
 
-function App() {
-  return (
-    <>
-      <Navbar />
-      <Header />
-      <BestSeller />
-      <FloatingWhatsApp />
-      <WhyChooseUs />
-      <OurFlowerGallery />
-      <OccasionCategories />
-      <ProcessSection />
-      <Footer />
-    </>
-  );
-}
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routers";
 
-export default App;
+export default function App() {
+  return <RouterProvider router={router} />;
+}
