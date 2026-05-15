@@ -2,7 +2,7 @@ import { FaGift, FaRegEdit, FaWhatsapp, FaTruck } from "react-icons/fa";
 import { HiOutlineArrowLeft } from "react-icons/hi";
 import { Link } from "react-router-dom";
 
-export default function OrderGuidePage() {
+export default function Order() {
   const steps = [
     {
       id: 1,

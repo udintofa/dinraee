@@ -6,7 +6,7 @@ import OurFlowerGallery from "../components/OurFlowerGallery";
 import OccasionCategories from "../components/OccasionCategories";
 import ProcessSection from "../components/ProcessSection";
 
-export default function Homepage() {
+export default function Home() {
   return (
     <>
       <Header />

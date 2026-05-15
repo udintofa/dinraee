@@ -25,7 +25,7 @@ const cardVariants = {
   },
 };
 
-export default function CatalogPage() {
+export default function Katalog() {
   const bouquets = [
     {
       id: 1,
