@@ -1,5 +1,6 @@
 import { FaGift, FaRegEdit, FaWhatsapp } from "react-icons/fa";
 import ButtomLine from "./ButtomLine";
+import { Link } from "react-router-dom";
 
 export default function ProcessSection() {
   const steps = [
@@ -72,12 +73,12 @@ export default function ProcessSection() {
 
             {/* Button */}
             {step.button && (
-              <a
-                href="#catalog"
+              <Link
+                to="/katalog"
                 className="inline-block mt-6 px-6 py-3 bg-[#f28c56] hover:bg-orange-500 text-white rounded-full font-medium transition duration-300"
               >
                 Lihat Katalog
-              </a>
+              </Link>
             )}
           </div>
         ))}

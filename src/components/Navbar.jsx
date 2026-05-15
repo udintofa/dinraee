@@ -8,7 +8,12 @@ export default function Navbar() {
   const [lastScrollY, setLastScrollY] = useState(0);
   const [open, setOpen] = useState(false);
 
-  const menuItems = ["Beranda", "Katalog", "Pesan", "Kontak"];
+  const menuItems = [
+    { name: "Beranda", link: "/" },
+    { name: "Katalog", link: "/katalog" },
+    { name: "Order", link: "/order" },
+    { name: "About", link: "/about" },
+  ];
 
   useEffect(() => {
     const controlNavbar = () => {
@@ -54,12 +59,12 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8">
           {menuItems.map((item) => (
-            <li key={item} className="relative group">
+            <li key={item.link} className="relative group">
               <a
-                href={`#${item.toLowerCase()}`}
+                href={item.link}
                 className="text-gray-700 font-medium transition"
               >
-                {item}
+                {item.name}
               </a>
 
               {/* Animated underline */}
@@ -69,7 +74,7 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <Link
-            to="/login"
+            to="/order"
             className="ml-4 bg-[#f28c56] text-white px-5 py-2 rounded-xl font-medium shadow hover:scale-105 transition"
           >
             Order Sekarang
@@ -98,23 +103,23 @@ export default function Navbar() {
             <ul className="flex flex-col px-6 py-6 gap-4">
               {menuItems.map((item, index) => (
                 <motion.li
-                  key={item}
+                  key={item.link}
                   initial={{ opacity: 0, x: -20 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.05 }}
                 >
                   <a
-                    href={`#${item.toLowerCase()}`}
+                    href={item.link}
                     className="block text-gray-700 font-medium py-2"
                     onClick={() => setOpen(false)}
                   >
-                    {item}
+                    {item.name}
                   </a>
                 </motion.li>
               ))}
 
               <Link
-                to="/login"
+                to="/order"
                 className="inline-block mt-4 bg-[#f28c56] text-white px-5 py-3 rounded-xl font-medium"
               >
                 Order Sekarang
