@@ -52,9 +52,12 @@ export default function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Logo */}
-        <h1 className="text-2xl font-bold bg-[#f28c56] bg-clip-text text-transparent">
+        <Link
+          to="/"
+          className="text-2xl font-bold bg-[#f28c56] bg-clip-text text-transparent"
+        >
           Dinraee
-        </h1>
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8">

@@ -5,25 +5,25 @@ export default function OccasionCategories() {
     {
       id: 1,
       name: "Wisuda",
-      image: "wisuda.png",
+      image: "/images/wisuda.webp",
       desc: "Rayakan pencapaian akademis dengan rangkaian bunga yang indah.",
     },
     {
       id: 2,
       name: "Birthday",
-      image: "birthday.png",
+      image: "/images/birthday.webp",
       desc: "Beri kejutan ulang tahun yang tak terlupakan dengan buket bunga cantik.",
     },
     {
       id: 3,
       name: "Anniversary",
-      image: "romance.png",
+      image: "/images/romance.webp",
       desc: "Rayakan momen spesial dengan rangkaian bunga yang penuh cinta.",
     },
     {
       id: 4,
       name: "Wedding",
-      image: "wedding.png",
+      image: "/images/wedding.webp",
       desc: "Buat hari pernikahanmu semakin indah dengan buket bunga yang elegan.",
     },
   ];

@@ -5,42 +5,42 @@ export default function OurFlowerGallery() {
   const images = [
     {
       id: 1,
-      image: "Blueshy.jpeg",
+      image: "/images/Blueshy.webp",
       height: "h-74",
     },
     {
       id: 2,
-      image: "Squeezy.jpeg",
+      image: "/images/Squeezy.webp",
       height: "h-96",
     },
     {
       id: 3,
-      image: "Geby.jpeg",
+      image: "/images/Geby.webp",
       height: "h-80",
     },
     {
       id: 4,
-      image: "Gerbi.jpeg",
+      image: "/images/Gerbi.webp",
       height: "h-74",
     },
     {
       id: 5,
-      image: "Pinki.jpeg",
+      image: "/images/Pinki.webp",
       height: "h-96",
     },
     {
       id: 6,
-      image: "Pinkyboe.jpeg",
+      image: "/images/Pinkyboe.webp",
       height: "h-72",
     },
     {
       id: 7,
-      image: "Redbeach.jpeg",
+      image: "/images/Redbeach.webp",
       height: "h-96",
     },
     {
       id: 8,
-      image: "SunnyWhite.jpeg",
+      image: "/images/SunnyWhite.webp",
       height: "h-80",
     },
   ];

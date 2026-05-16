@@ -35,56 +35,56 @@ export default function Katalog() {
       title: "Blueshy",
       category: "Fresh Flower",
       price: 55,
-      image: "/Blueshy.jpeg",
+      image: "/images/Blueshy.webp",
     },
     {
       id: 2,
       title: "Squeezy",
       category: "Fresh Flower",
       price: 65,
-      image: "/Squeezy.jpeg",
+      image: "/images/Squeezy.webp",
     },
     {
       id: 3,
       title: "Geby",
       category: "Fresh Flower",
       price: 50,
-      image: "/Geby.jpeg",
+      image: "/images/Geby.webp",
     },
     {
       id: 4,
       title: "Gerbi",
       category: "Fresh Flower",
       price: 45,
-      image: "/Gerbi.jpeg",
+      image: "/images/Gerbi.webp",
     },
     {
       id: 5,
       title: "Pinki",
       category: "Fresh Flower",
       price: 70,
-      image: "/Pinki.jpeg",
+      image: "/images/Pinki.webp",
     },
     {
       id: 6,
       title: "Pinkyboe",
       category: "Fresh Flower",
       price: 60,
-      image: "/Pinkyboe.jpeg",
+      image: "/images/Pinkyboe.webp",
     },
     {
       id: 7,
       title: "Redbeach",
       category: "Fresh Flower",
       price: 75,
-      image: "/Redbeach.jpeg",
+      image: "/images/Redbeach.webp",
     },
     {
       id: 8,
       title: "SunnyWhite",
       category: "Fresh Flower",
       price: 58,
-      image: "/SunnyWhite.jpeg",
+      image: "/images/SunnyWhite.webp",
     },
   ];
 
@@ -115,7 +115,7 @@ export default function Katalog() {
   // Loading Screen
   if (loading) {
     return (
-      <section className="min-h-screen flex items-center justify-center bg-[#fff7f8]">
+      <section className="min-h-screen py-30 flex items-center justify-center bg-[#fff7f8]">
         <div className="text-center">
           <div className="w-14 h-14 border-4 border-[#f28c56] border-t-transparent rounded-full animate-spin mx-auto"></div>
 
@@ -157,6 +157,7 @@ export default function Katalog() {
               variants={cardVariants}
               whileHover={{ y: -8 }}
               transition={{ duration: 0.3 }}
+              py-30
               className="bg-white rounded-[2rem] shadow-md overflow-hidden hover:shadow-2xl transition duration-300"
             >
               {/* Image */}

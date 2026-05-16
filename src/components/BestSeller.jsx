@@ -33,7 +33,7 @@ export default function BestSeller() {
       author: "Dinraee Florist",
       category: "Fresh Flower",
       price: 55,
-      image: "SunnyPink.jpeg",
+      image: "/images/SunnyPink.webp",
     },
     {
       id: 2,
@@ -41,7 +41,7 @@ export default function BestSeller() {
       author: "Dinraee Florist",
       category: "Fresh Flower",
       price: 15,
-      image: "Rosey.jpeg",
+      image: "/images/Rosey.webp",
     },
     {
       id: 3,
@@ -49,7 +49,7 @@ export default function BestSeller() {
       author: "Dinraee Florist",
       category: "Fresh Flower",
       price: 55,
-      image: "CherryBlush.jpeg",
+      image: "/images/CherryBlush.webp",
     },
   ];
 
