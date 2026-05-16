@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import { useEffect, useState } from "react";
 import ButtomLine from "../components/ButtomLine";
 
 const containerVariants = {
@@ -26,6 +27,8 @@ const cardVariants = {
 };
 
 export default function Katalog() {
+  const [loading, setLoading] = useState(true);
+
   const bouquets = [
     {
       id: 1,
@@ -85,6 +88,43 @@ export default function Katalog() {
     },
   ];
 
+  useEffect(() => {
+    const loadImages = async () => {
+      const promises = bouquets.map((bouquet) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+          img.src = bouquet.image;
+
+          img.onload = resolve;
+          img.onerror = reject;
+        });
+      });
+
+      try {
+        await Promise.all(promises);
+      } catch (error) {
+        console.log("Ada gambar yang gagal dimuat");
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    loadImages();
+  }, []);
+
+  // Loading Screen
+  if (loading) {
+    return (
+      <section className="min-h-screen flex items-center justify-center bg-[#fff7f8]">
+        <div className="text-center">
+          <div className="w-14 h-14 border-4 border-[#f28c56] border-t-transparent rounded-full animate-spin mx-auto"></div>
+
+          <p className="mt-4 text-gray-600">Loading katalog bunga...</p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="min-h-screen py-30 bg-[#fff7f8] px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
@@ -129,12 +169,10 @@ export default function Katalog() {
                   transition={{ duration: 0.5 }}
                 />
 
-                {/* Category */}
                 <span className="absolute top-4 left-4 bg-[#f28c56] text-white text-sm px-4 py-1 rounded-full shadow">
                   {bouquet.category}
                 </span>
 
-                {/* Price */}
                 <span className="absolute top-4 right-4 bg-white text-[#f28c56] font-semibold px-4 py-1 rounded-full shadow">
                   Rp{bouquet.price}K
                 </span>
@@ -149,7 +187,6 @@ export default function Katalog() {
                 </h3>
 
                 <div className="flex gap-3 mt-6">
-                  {/* Order */}
                   <a
                     href="https://wa.me/6285719944792"
                     target="_blank"
@@ -159,7 +196,6 @@ export default function Katalog() {
                     Order Now
                   </a>
 
-                  {/* Detail */}
                   <Link
                     to="/order"
                     className="px-5 py-3 rounded-full border border-[#f28c56] text-[#f28c56] hover:bg-[#fff1eb] transition duration-300"
