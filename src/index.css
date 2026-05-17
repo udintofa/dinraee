@@ -13,3 +13,20 @@
 .animate-scroll {
   animation: scroll 20s linear infinite;
 }
+
+:root {
+  --primary-50: #fff5f7;
+  --primary-100: #ffe4ea;
+  --primary-200: #ffcdd8;
+  --primary-300: #f9a8b8;
+  --primary-400: #f4728f;
+  --primary-500: #ec5f7d;
+  --primary-600: #db4365;
+  --primary-700: #be2f50;
+
+  --background: #fffafb;
+  --surface: #ffffff;
+
+  --text-primary: #2d1b22;
+  --text-secondary: #7b5560;
+}

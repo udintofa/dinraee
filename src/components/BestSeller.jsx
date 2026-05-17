@@ -95,12 +95,12 @@ export default function BestSeller() {
                 />
 
                 {/* Category */}
-                <span className="absolute top-4 left-4 bg-[#f28c56] text-white text-sm px-4 py-1 rounded-full shadow">
+                <span className="absolute top-4 left-4 bg-[var(--primary-600)] text-white text-sm px-4 py-1 rounded-full shadow">
                   {course.category}
                 </span>
 
                 {/* Price */}
-                <span className="absolute top-4 right-4 bg-white text-[#f28c56] font-semibold px-4 py-1 rounded-full shadow">
+                <span className="absolute top-4 right-4 bg-white text-[var(--primary-600)] font-semibold px-4 py-1 rounded-full shadow">
                   Rp{course.price}K
                 </span>
               </div>
@@ -113,7 +113,7 @@ export default function BestSeller() {
                   {course.title}
                 </h3>
 
-                <button className="mt-6 w-full bg-[#f28c56] hover:bg-orange-500 text-white py-3 rounded-full font-medium transition duration-300">
+                <button className="mt-6 w-full bg-[var(--primary-600)] hover:bg-[var(--primary-700)] text-white py-3 rounded-full font-medium transition duration-300">
                   Order Now
                 </button>
               </div>

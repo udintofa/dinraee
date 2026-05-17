@@ -21,9 +21,13 @@ export default function Header() {
           </span>
 
           <h1 className="text-5xl md:text-7xl font-bold leading-tight text-gray-800">
-            Save your <span className="text-[#f28c56]">Beautiful</span>
+            Save your{" "}
+            <span className="text-[var(--primary-600)]">Beautiful</span>
             <br />
-            Memories with <span className="text-[#f28c56]">Us</span> 💐
+            Memories with <span className="text-[var(--primary-600)]">
+              Us
+            </span>{" "}
+            💐
           </h1>
 
           <p className="mt-6 text-gray-600 text-lg leading-relaxed max-w-xl mx-auto md:mx-0">
@@ -34,7 +38,7 @@ export default function Header() {
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#shop"
-              className="px-8 py-4 bg-[#f28c56] text-white rounded-full font-semibold hover:scale-105 transition duration-300 shadow-lg text-center"
+              className="px-8 py-4 bg-[var(--primary-600)] text-white rounded-full font-semibold hover:scale-105 transition duration-300 shadow-lg text-center"
             >
               Lihat Koleksi
             </a>
@@ -65,7 +69,7 @@ export default function Header() {
 
             {/* Floating Card */}
             <div className="absolute bottom-5 left-5 right-5 bg-white/90 backdrop-blur-md rounded-2xl p-4 shadow-lg flex items-center gap-4">
-              {/* <div className="w-12 h-12 rounded-full bg-[#ffe3e6] flex items-center justify-center font-bold text-[#f28c56]">
+              {/* <div className="w-12 h-12 rounded-full bg-[var(--primary-600)] flex items-center justify-center font-bold text-[#f28c56]">
                 50%
               </div> */}
 

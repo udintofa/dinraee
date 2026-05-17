@@ -42,7 +42,7 @@ export default function Navbar() {
         w-[90%] max-w-6xl
         -translate-x-1/2
         rounded-2xl
-        bg-[#fbf1f2]
+        bg-[var(--primary-50)]
         backdrop-blur-md
         border border-white/20
         shadow-lg
@@ -54,7 +54,7 @@ export default function Navbar() {
         {/* Logo */}
         <Link
           to="/"
-          className="text-2xl font-bold bg-[#f28c56] bg-clip-text text-transparent"
+          className="text-2xl font-bold bg-[var(--primary-600)] bg-clip-text text-transparent"
         >
           Dinraee
         </Link>
@@ -71,14 +71,14 @@ export default function Navbar() {
               </a>
 
               {/* Animated underline */}
-              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[#f28c56] transition-all duration-300 group-hover:w-full"></span>
+              <span className="absolute left-0 -bottom-1 w-0 h-[2px] bg-[var(--primary-600)] transition-all duration-300 group-hover:w-full"></span>
             </li>
           ))}
 
           {/* CTA Button */}
           <Link
             to="/order"
-            className="ml-4 bg-[#f28c56] text-white px-5 py-2 rounded-xl font-medium shadow hover:scale-105 transition"
+            className="ml-4 bg-[var(--primary-600)] text-white px-5 py-2 rounded-xl font-medium shadow hover:scale-105 transition"
           >
             Order Sekarang
           </Link>
@@ -123,7 +123,7 @@ export default function Navbar() {
 
               <Link
                 to="/order"
-                className="inline-block mt-4 bg-[#f28c56] text-white px-5 py-3 rounded-xl font-medium"
+                className="inline-block mt-4 bg-[var(--primary-600)] text-white px-5 py-3 rounded-xl font-medium"
               >
                 Order Sekarang
               </Link>
