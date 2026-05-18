@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
 import ButtomLine from "../components/ButtomLine";
 
 const containerVariants = {
@@ -27,8 +26,6 @@ const cardVariants = {
 };
 
 export default function Katalog() {
-  const [loading, setLoading] = useState(true);
-
   const bouquets = [
     {
       id: 1,
@@ -116,43 +113,6 @@ export default function Katalog() {
     },
   ];
 
-  useEffect(() => {
-    const loadImages = async () => {
-      const promises = bouquets.map((bouquet) => {
-        return new Promise((resolve, reject) => {
-          const img = new Image();
-          img.src = bouquet.image;
-
-          img.onload = resolve;
-          img.onerror = reject;
-        });
-      });
-
-      try {
-        await Promise.all(promises);
-      } catch (error) {
-        console.log("Ada gambar yang gagal dimuat");
-      } finally {
-        setLoading(false);
-      }
-    };
-
-    loadImages();
-  }, []);
-
-  // Loading Screen
-  if (loading) {
-    return (
-      <section className="min-h-screen py-30 flex items-center justify-center bg-[var(--primary-50)]">
-        <div className="text-center">
-          <div className="w-14 h-14 border-4 border-[var(--primary-500)] border-t-transparent rounded-full animate-spin mx-auto"></div>
-
-          <p className="mt-4 text-gray-600">Loading katalog bunga...</p>
-        </div>
-      </section>
-    );
-  }
-
   return (
     <section className="min-h-screen py-30 bg-[var(--primary-50)] px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
@@ -175,8 +135,7 @@ export default function Katalog() {
         <motion.div
           variants={containerVariants}
           initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
+          animate="show"
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"
         >
           {bouquets.map((bouquet) => (
@@ -185,17 +144,15 @@ export default function Katalog() {
               variants={cardVariants}
               whileHover={{ y: -8 }}
               transition={{ duration: 0.3 }}
-              py-30
               className="bg-white rounded-[2rem] shadow-md overflow-hidden hover:shadow-2xl transition duration-300"
             >
               {/* Image */}
               <div className="relative overflow-hidden">
-                <motion.img
+                <img
                   src={bouquet.image}
                   alt={bouquet.title}
-                  className="w-full h-[320px] md:h-[420px] object-cover"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.5 }}
+                  loading="lazy"
+                  className="w-full h-[320px] md:h-[420px] object-cover hover:scale-105 transition duration-500"
                 />
 
                 <span className="absolute top-4 left-4 bg-[var(--primary-500)] text-white text-sm px-4 py-1 rounded-full shadow">
