@@ -31,12 +31,12 @@ export default function Order() {
   ];
 
   return (
-    <section className="min-h-screen bg-[#fff7f8] py-24 px-6">
+    <section className="min-h-screen bg-[var(--primary-50)] py-24 px-6">
       <div className="max-w-6xl mx-auto">
         {/* Back */}
         <Link
           to="/"
-          className="inline-flex items-center gap-2 text-gray-600 hover:text-[#f28c56] transition mb-10"
+          className="inline-flex items-center gap-2 text-gray-600 hover:text-[var(--primary-500)] transition mb-10"
         >
           <HiOutlineArrowLeft />
           Back to Home
@@ -44,7 +44,7 @@ export default function Order() {
 
         {/* Heading */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 rounded-full bg-[#ffe8df] text-[#f28c56] text-sm font-medium">
+          <span className="inline-block px-4 py-2 rounded-full bg-[var(--primary-100)] text-[var(--primary-500)] text-sm font-medium">
             Simple Ordering Process
           </span>
 
@@ -68,12 +68,12 @@ export default function Order() {
               {/* Top */}
               <div className="flex items-center justify-between">
                 {/* Icon */}
-                <div className="w-20 h-20 rounded-full bg-[#fff1eb] flex items-center justify-center text-[#f28c56] text-3xl">
+                <div className="w-20 h-20 rounded-full bg-[var(--primary-100)] flex items-center justify-center text-[var(--primary-500)] text-3xl">
                   {step.icon}
                 </div>
 
                 {/* Number */}
-                <div className="w-10 h-10 rounded-full bg-[#f28c56] text-white font-semibold flex items-center justify-center">
+                <div className="w-10 h-10 rounded-full bg-[var(--primary-500)] text-white font-semibold flex items-center justify-center">
                   {step.id}
                 </div>
               </div>
@@ -100,7 +100,7 @@ export default function Order() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-8">
             <Link
               to="/katalog"
-              className="px-8 py-4 rounded-full bg-[#f28c56] hover:bg-orange-500 text-white font-medium transition duration-300"
+              className="px-8 py-4 rounded-full bg-[var(--primary-500)] hover:bg-[var(--primary-600)] text-white font-medium transition duration-300"
             >
               Lihat Katalog
             </Link>
@@ -109,7 +109,7 @@ export default function Order() {
               href="https://wa.me/6285719944792"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-full border border-[#f28c56] text-[#f28c56] hover:bg-[#fff1eb] font-medium transition duration-300"
+              className="px-8 py-4 rounded-full border border-[var(--primary-500)] text-[var(--primary-500)] hover:bg-[var(--primary-100)] font-medium transition duration-300"
             >
               Chat WhatsApp
             </a>

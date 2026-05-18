@@ -83,7 +83,7 @@ export default function OurFlowerGallery() {
       <div className="flex justify-center pt-10">
         <Link
           to="/katalog"
-          className="bg-[#f28c56] text-white px-5 py-2 rounded-xl font-medium shadow hover:scale-105 transition"
+          className="bg-[var(--primary-500)] text-white px-5 py-2 rounded-xl font-medium shadow hover:scale-105 transition"
         >
           Lihat Semua
         </Link>

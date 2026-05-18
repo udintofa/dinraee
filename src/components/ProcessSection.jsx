@@ -51,16 +51,16 @@ export default function ProcessSection() {
           >
             {/* Line Connector Desktop */}
             {index !== steps.length - 1 && (
-              <div className="hidden md:block absolute top-20 -right-4 w-8 h-[2px] bg-[#f28c56]"></div>
+              <div className="hidden md:block absolute top-20 -right-4 w-8 h-[2px] bg-[var(--primary-500)]"></div>
             )}
 
             {/* Icon */}
-            <div className="w-20 h-20 rounded-full bg-[#fff1eb] mx-auto flex items-center justify-center text-[#f28c56] text-3xl shadow-sm">
+            <div className="w-20 h-20 rounded-full bg-[#fff1eb] mx-auto flex items-center justify-center text-[var(--primary-500)] text-3xl shadow-sm">
               {step.icon}
             </div>
 
             {/* Number */}
-            <div className="absolute top-5 right-5 w-8 h-8 rounded-full bg-[#f28c56] text-white text-sm flex items-center justify-center font-semibold">
+            <div className="absolute top-5 right-5 w-8 h-8 rounded-full bg-[var(--primary-500)] text-white text-sm flex items-center justify-center font-semibold">
               {step.id}
             </div>
 
@@ -75,7 +75,7 @@ export default function ProcessSection() {
             {step.button && (
               <Link
                 to="/katalog"
-                className="inline-block mt-6 px-6 py-3 bg-[#f28c56] hover:bg-orange-500 text-white rounded-full font-medium transition duration-300"
+                className="inline-block mt-6 px-6 py-3 bg-[var(--primary-500)] hover:bg-[var(--primary-600)] text-white rounded-full font-medium transition duration-300"
               >
                 Lihat Katalog
               </Link>

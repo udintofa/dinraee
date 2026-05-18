@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
           {[...features, ...features].map((item, index) => (
             <div
               key={index}
-              className="w-[280px] bg-[#fbf1f2] rounded-3xl p-8 flex-shrink-0 shadow-md hover:-translate-y-2 transition duration-300"
+              className="w-[280px] bg-[var(--primary-50)] rounded-3xl p-8 flex-shrink-0 shadow-md hover:-translate-y-2 transition duration-300"
             >
               {/* Icon */}
               <div className="w-16 h-16 rounded-full bg-white flex items-center justify-center text-[#f28c56] text-2xl shadow-sm">

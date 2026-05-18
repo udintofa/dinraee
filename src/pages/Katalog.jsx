@@ -143,9 +143,9 @@ export default function Katalog() {
   // Loading Screen
   if (loading) {
     return (
-      <section className="min-h-screen py-30 flex items-center justify-center bg-[#fff7f8]">
+      <section className="min-h-screen py-30 flex items-center justify-center bg-[var(--primary-50)]">
         <div className="text-center">
-          <div className="w-14 h-14 border-4 border-[#f28c56] border-t-transparent rounded-full animate-spin mx-auto"></div>
+          <div className="w-14 h-14 border-4 border-[var(--primary-500)] border-t-transparent rounded-full animate-spin mx-auto"></div>
 
           <p className="mt-4 text-gray-600">Loading katalog bunga...</p>
         </div>
@@ -154,7 +154,7 @@ export default function Katalog() {
   }
 
   return (
-    <section className="min-h-screen py-30 bg-[#fff7f8] px-4 md:px-6">
+    <section className="min-h-screen py-30 bg-[var(--primary-50)] px-4 md:px-6">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-14">
@@ -198,11 +198,11 @@ export default function Katalog() {
                   transition={{ duration: 0.5 }}
                 />
 
-                <span className="absolute top-4 left-4 bg-[#f28c56] text-white text-sm px-4 py-1 rounded-full shadow">
+                <span className="absolute top-4 left-4 bg-[var(--primary-500)] text-white text-sm px-4 py-1 rounded-full shadow">
                   {bouquet.category}
                 </span>
 
-                <span className="absolute top-4 right-4 bg-white text-[#f28c56] font-semibold px-4 py-1 rounded-full shadow">
+                <span className="absolute top-4 right-4 bg-white text-[var(--primary-500)] font-semibold px-4 py-1 rounded-full shadow">
                   Rp{bouquet.price}K
                 </span>
               </div>
@@ -220,14 +220,14 @@ export default function Katalog() {
                     href="https://wa.me/6285719944792"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 bg-[#f28c56] hover:bg-orange-500 text-white py-3 rounded-full font-medium text-center transition duration-300"
+                    className="flex-1 bg-[var(--primary-500)] hover:bg-[var(--primary-600)] text-white py-3 rounded-full font-medium text-center transition duration-300"
                   >
                     Order Now
                   </a>
 
                   <Link
                     to="/order"
-                    className="px-5 py-3 rounded-full border border-[#f28c56] text-[#f28c56] hover:bg-[#fff1eb] transition duration-300"
+                    className="px-5 py-3 rounded-full border border-[var(--primary-500)] text-[var(--primary-500)] hover:bg-[var(--primary-100)] transition duration-300"
                   >
                     Guide
                   </Link>

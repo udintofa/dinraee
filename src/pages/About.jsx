@@ -31,16 +31,16 @@ export default function About() {
   ];
 
   return (
-    <section className="min-h-screen bg-[#fff7f8] overflow-hidden">
+    <section className="min-h-screen bg-[var(--primary-50)] overflow-hidden">
       {/* HERO */}
       <div className="relative py-28 px-6">
         {/* Background Blur */}
-        <div className="absolute top-10 left-10 w-52 h-52 bg-[#f28c56]/20 blur-3xl rounded-full"></div>
+        <div className="absolute top-10 left-10 w-52 h-52 bg-[var(--primary-500)]/20 blur-3xl rounded-full"></div>
 
         <div className="max-w-7xl mx-auto relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
           {/* Left */}
           <div>
-            <span className="inline-block px-4 py-2 rounded-full bg-[#ffe8df] text-[#f28c56] text-sm font-medium">
+            <span className="inline-block px-4 py-2 rounded-full bg-[var(--primary-100)] text-[var(--primary-500)] text-sm font-medium">
               About Dinraee Florist
             </span>
 
@@ -62,7 +62,7 @@ export default function About() {
             <div className="flex flex-col sm:flex-row gap-4 mt-10">
               <Link
                 to="/katalog"
-                className="px-8 py-4 rounded-full bg-[#f28c56] hover:bg-orange-500 text-white font-medium transition duration-300 text-center"
+                className="px-8 py-4 rounded-full bg-[var(--primary-500)] hover:bg-[var(--primary-600)] text-white font-medium transition duration-300 text-center"
               >
                 View Catalog
               </Link>
@@ -71,7 +71,7 @@ export default function About() {
                 href="https://wa.me/6285719944792"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-8 py-4 rounded-full border border-[#f28c56] text-[#f28c56] hover:bg-[#fff1eb] transition duration-300 text-center"
+                className="px-8 py-4 rounded-full border border-[var(--primary-500)] text-[var(--primary-500)] hover:bg-[var(--primary-100)] transition duration-300 text-center"
               >
                 Chat WhatsApp
               </a>
@@ -146,10 +146,10 @@ export default function About() {
             {values.map((value) => (
               <div
                 key={value.id}
-                className="bg-[#fff7f8] rounded-[2rem] p-8 text-center shadow-md hover:-translate-y-2 hover:shadow-xl transition duration-300"
+                className="bg-[var(--primary-100)] rounded-[2rem] p-8 text-center shadow-md hover:-translate-y-2 hover:shadow-xl transition duration-300"
               >
                 {/* Icon */}
-                <div className="w-20 h-20 rounded-full bg-[#ffe8df] mx-auto flex items-center justify-center text-[#f28c56] text-3xl">
+                <div className="w-20 h-20 rounded-full bg-[var(--primary-100)] mx-auto flex items-center justify-center text-[var(--primary-500)] text-3xl">
                   {value.icon}
                 </div>
 
@@ -182,7 +182,7 @@ export default function About() {
           <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
             <Link
               to="/katalog"
-              className="px-8 py-4 rounded-full bg-[#f28c56] hover:bg-orange-500 text-white font-medium transition duration-300"
+              className="px-8 py-4 rounded-full bg-[var(--primary-500)] hover:bg-[var(--primary-600)] text-white font-medium transition duration-300"
             >
               Explore Catalog
             </Link>
@@ -191,7 +191,7 @@ export default function About() {
               href="https://wa.me/6285719944792"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 rounded-full border border-[#f28c56] text-[#f28c56] hover:bg-[#fff1eb] transition duration-300"
+              className="px-8 py-4 rounded-full border border-[var(--primary-500)] text-[var(--primary-500)] hover:bg-[var(--primary-100)] transition duration-300"
             >
               Contact Us
             </a>

@@ -9,7 +9,7 @@ export default function Header() {
           className="w-full h-full object-cover opacity-20"
         />
 
-        <div className="absolute inset-0 bg-gradient-to-t from-[#fbf1f2] via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-[var(--primary-100)] via-transparent to-transparent"></div>
       </div>
 
       {/* Content */}
