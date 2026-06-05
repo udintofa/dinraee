@@ -134,7 +134,7 @@ export default function Katalog() {
         <input 
           id="swal-name" 
           class="swal2-input" 
-          placeholder="Contoh: Udin"
+          placeholder="Contoh: Fulan"
         >
 
         <div style="margin-top:18px;">
