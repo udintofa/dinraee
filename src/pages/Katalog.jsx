@@ -143,7 +143,7 @@ export default function Katalog() {
           </label>
 
           <p style="font-size:13px; color:#777; margin-top:4px;">
-            📦 Pengiriman dikenakan tambahan ongkir Rp4.000 yaa
+            📦 Pengiriman dikenakan tambahan ongkir Rp10.000 yaa
           </p>
 
           <select id="swal-method" class="swal2-input">
@@ -232,14 +232,14 @@ export default function Katalog() {
         const bouquetPrice = bouquet.price * 1000;
 
         const updatePrice = () => {
-          const ongkir = method.value === "Dikirim" ? 4000 : 0;
+          const ongkir = method.value === "Dikirim" ? 10000 : 0;
           const total = bouquetPrice + ongkir;
 
           if (method.value === "Dikirim") {
             locationLabel.innerText = "Bouquet mau dikirim ke mana yaa?";
             shippingRow.innerHTML = `
             <span>Ongkir</span>
-            <span>Rp4.000</span>
+            <span>Rp10.000</span>
           `;
           } else {
             locationLabel.innerText = "Mau COD di mana yaa?";
@@ -278,7 +278,7 @@ export default function Katalog() {
     });
 
     if (formValues) {
-      const ongkir = formValues.method === "Dikirim" ? 4000 : 0;
+      const ongkir = formValues.method === "Dikirim" ? 10000 : 0;
 
       const bouquetPrice = bouquet.price * 1000;
 
