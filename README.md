@@ -1,8 +1,12 @@
 # 💐 Dinraee — Modern Bouquet Shop Website
 
+[![Live Demo](https://img.shields.io/badge/Demo-dinraee.vercel.app-pink?style=for-the-badge&logo=vercel)](https://dinraee.vercel.app)
+
 Selamat datang di repository project **Dinraee**! Website ini merupakan platform katalog & e-commerce landing page untuk usaha penjualan buket bunga (custom bouquet, money bouquet, flower arrangement, dll.) yang dirancang modern, responsif, dan interaktif.
 
 Project ini dibuat untuk membantu operasional bisnis UMKM toko buket lokal sekaligus dikembangkan sebagai **Project Portofolio Frontend Development**.
+
+🔗 **Live Website:** [https://dinraee.vercel.app](https://dinraee.vercel.app)
 
 ---
 
