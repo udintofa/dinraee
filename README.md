@@ -1,16 +1,106 @@
-# React + Vite
+# 💐 Dinraee — Modern Bouquet Shop Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Selamat datang di repository project **Dinraee**! Website ini merupakan platform katalog & e-commerce landing page untuk usaha penjualan buket bunga (custom bouquet, money bouquet, flower arrangement, dll.) yang dirancang modern, responsif, dan interaktif.
 
-Currently, two official plugins are available:
+Project ini dibuat untuk membantu operasional bisnis UMKM toko buket lokal sekaligus dikembangkan sebagai **Project Portofolio Frontend Development**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🚀 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Project ini dibangun menggunakan ekosistem React modern dan utility-first CSS framework versi terbaru:
 
-## Expanding the ESLint configuration
+- **Framework / Library Utama:** [React 19](https://react.dev/)
+- **Build Tool:** [Vite](https://vitejs.dev/) + `@tailwindcss/vite`
+- **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+- **Routing:** [React Router v7](https://reactrouter.com/)
+- **Animations:** [Motion](https://motion.dev/) (Framer Motion v12)
+- **UI Components & Icons:** [React Icons](https://react-icons.github.io/react-icons/)
+- **Popups & Alerts:** [SweetAlert2](https://sweetalert2.github.io/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Fitur Utama
+
+- **🎨 Modern & Responsive UI:** Tampilan cantik, elegan, dan fleksibel di layar smartphone, tablet, maupun desktop.
+- **✨ Smooth Animations & Transitions:** Animasi interaktif menggunakan Motion untuk pengalaman pengguna yang menyenangkan.
+- **🛍️ Catalog Display:** Menampilkan berbagai pilihan jenis buket beserta detail harga dan deskripsi.
+- **🛒 Interactive Order / Contact:** Notifikasi modal interaktif dengan SweetAlert2 untuk konfirmasi pemesanan via WhatsApp atau form.
+- **⚡ Fast Performance:** Menggunakan Vite dan Tailwind CSS v4 untuk *loading time* yang sangat cepat dan efisien.
+
+---
+
+## 🛠️ Modul & Dependencies
+
+Berikut adalah daftar package utama yang digunakan dalam project ini:
+
+```json
+"dependencies": {
+  "@tailwindcss/vite": "^4.3.0",
+  "motion": "^12.38.0",
+  "react": "^19.2.6",
+  "react-dom": "^19.2.6",
+  "react-icons": "^5.6.0",
+  "react-router-dom": "^7.15.0",
+  "sweetalert2": "^11.26.24",
+  "tailwindcss": "^4.3.0"
+}
+```
+
+---
+
+## 📦 Getting Started
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan project secara lokal di komputer kamu:
+
+### 1. Clone Repository
+```bash
+git clone https://github.com/username/dinraee-bouquet-shop.git
+cd dinraee-bouquet-shop
+```
+
+### 2. Install Dependencies
+```bash
+npm install
+```
+
+### 3. Jalankan Development Server
+```bash
+npm run dev
+```
+Buka browser dan akses alamat `http://localhost:5173` (atau sesuai port Vite kamu).
+
+### 4. Build untuk Production
+```bash
+npm run build
+```
+
+---
+
+## 📁 Struktur Folder Project
+
+```text
+dinraee/
+├── public/
+│   └── Dinraee.png       # Logo & Favicon Website
+├── src/
+│   ├── assets/           # Gambar, Icon, & Assets
+│   ├── components/       # Component Reusable (Navbar, Footer, Card, Modal)
+│   ├── pages/            # Halaman (Home, Catalog, Detail, About, Contact)
+│   ├── App.jsx           # Setup Routing & Main Layout
+│   ├── main.jsx          # Entry point React
+│   └── index.css         # Styling global & setup Tailwind CSS
+├── index.html            # Template HTML Utama
+├── package.json          # Dependency & Script List
+└── vite.config.js        # Konfigurasi Vite & Tailwind Plugin
+```
+
+---
+
+## 💼 Catatan Portofolio
+
+> **Client & Use Case:** Website ini dirancang dan dikembangkan untuk membantu brand toko buket **Dinraee** dalam meningkatkan *online presence*, menampilkan katalog produk secara profesional, serta mempermudah pelanggan melakukan pemesanan.
+
+---
+
+Dibuat dengan ❤️ oleh [Nama Kamu]
